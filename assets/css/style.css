@@ -1,0 +1,157 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.bg_biru {
+    background-color: #0d6efd;
+}
+
+.bg_hijau {
+    background-color: #198754;
+}
+
+.bg_merah{
+    background-color: #dc3545;
+}
+.bg_kuning{
+    background-color: #ffc107;
+}
+
+body {
+    background-color: #eee;
+    font-family: sans-serif;
+}
+
+.container {
+    margin: 10px auto;
+    max-width: 90%;
+    box-shadow: 0 0 6px 1px rgb(0 0 0 / 50%);
+    padding: 10px;
+    background-color: #fff;
+}
+.container-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.form-title-data {
+    padding: 10px;
+    font-size: 18px;
+    margin: 0 auto 10px;
+    color: white;
+}
+.form-input-data{
+    flex: 40%;
+    margin: 0 5px;
+    border: 1px solid #ddd;
+}
+
+.form-output-data {
+    flex: 60%;
+    margin: 0 5px;
+    border: 1px solid #ddd;
+}
+.form-data {
+    padding: 5px 10px;
+}
+.form-input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 5px;
+    justify-content: flex-start;
+}
+
+.form-input label {
+    flex: 30%;
+    max-width: 30%;
+}
+
+.form-input input,.form-input select, .form-input textarea {
+    flex: 70%;
+    max-width: 70%;
+    padding: 5px;
+}
+.form-btn {
+    position: relative;
+    display: block;
+    margin: 5px auto 10px;
+    overflow: hidden;
+}
+.form-btn input {
+    float: right;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+}
+.table-data{
+    overflow-x: auto;
+}
+.form-tabel{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 10px;
+}
+tr, td, th{
+    border: 1px solid #444;
+}
+td, th{
+    padding: 5px 10px;
+}
+.btn-handle {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    margin: 2px auto;
+    text-align: center;
+}
+.succes-save, .error-save {
+    padding: 10px;
+    margin: 10px;
+    color: white;
+}
+
+@media screen and (max-width:720px){
+    .container-2{
+        display: block;
+    }
+    .form-input-data{
+        margin-bottom: 10px;
+    }
+    .form-input-data, .form-output-data{
+        flex: none;
+    }
+    .form-input{
+        padding: 15px 10px;
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: normal;
+    }
+    .form-input label{
+        flex: none;
+        max-width: 100%;
+    }
+    .form-input input, .form-input select, .form-input textarea{
+        flex: 100%;
+        max-width: 100%;
+        width: 100%;
+    }
+    .form-input:nth-child(odd) {
+        background-color: #eee;
+        border-bottom: 1px solid #999;
+    }
+    .form-btn{
+
+    }
+    .form-btn input{
+        float: none;
+        width: 100%;
+        margin: 10px auto;
+    }
+}
